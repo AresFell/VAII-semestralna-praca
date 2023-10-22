@@ -2,63 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Babičkine recepty - ďaľšie údaje</title>
+    <title>Babičkine recepty - údaje</title>
     <link rel="icon" type="image/png" href="images/cooking-icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
 </head>
+<body>
 
+<div class="container">
+    <form action="hlavna_stranka.html" method="get">
+        <ul class="flex-outer">
+            <li>
+                <h1>Registračný formulár</h1>
+            </li>
+            <li>
+                <label for="first-name">Meno</label>
+                <input type="text" id="first-name" placeholder="napr. Jozko">
+            </li>
+            <li>
+                <label for="last-name">Priezvisko</label>
+                <input type="text" id="last-name" placeholder="napr. Mrkvicka">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="napr. jozko.mrkvicka@smail.com">
+            </li>
+            <li>
+                <label for="password">Heslo</label>
+                <input type="password" id="password" placeholder="napr. apja565">
+            </li>
+            <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="napr. +421 687 597 578">
+            </li>
+            <li>
+                <label for="day-of-birth">Dátum narodenia</label>
+                <input type="tel" id="day-of-birth" placeholder="napr. 30.11.2002">
+            </li>
+            <li>
+                <p>Pohlavie</p>
+                <ul class="flex-inner">
+                    <li>
+                        <input type="checkbox" id="female">
+                        <label for="female">female</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="male">
+                        <label for="male">male</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="other">
+                        <label for="other">other</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="hlavna_stranka.html">
+                    <button type="submit">Zaregistruj ma</button>
+                </a>
+            </li>
+        </ul>
+    </form>
+</div>
 
-
-<body class="d-flex align-items-center py-4 bg-body-tertiary">
-    <main class="w-100 m-auto">
-        <form>
-            <div class="mb-3">
-                <label for="firstName" class="form-label">Meno</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                    Potrebná položka
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Priezvisko</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                <div class="invalid-feedback">
-                    Potrebná položka
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                    <div class="invalid-feedback">
-                        Potrebná položka
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                <div class="invalid-feedback">
-                    Potrebná položka
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="address" class="form-label">Adresa</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-                <div class="invalid-feedback">
-                    Potrebná položka
-                </div>
-            </div>
-        </form>
-    </main>
 
 </body>
 </html>
